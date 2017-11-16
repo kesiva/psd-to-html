@@ -1,0 +1,428 @@
+/* CSS RESET */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-family: arial;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*//////////// end css reset //////////*/
+
+/* NORMAL CSS */
+.wrapper{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+header{
+	background: #2e2e2e;
+}
+
+header:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#logo{
+	float: left;
+}
+
+nav ul{
+	float: right;
+}
+
+nav li{
+	color: white;
+	text-transform: uppercase;
+	float: left;
+	padding: 25px 15px;
+	border-left: 0.2px solid grey;
+	border-right: 0.2px solid grey;
+	font-size: 12px;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+/*BANNER*/
+#banner h2{
+	text-indent: -10000px;
+	height: 0;
+}
+#banner img{
+	height: 700px;
+	width: 100%;
+}
+
+#logo{
+	background: url("images/frost_02.jpg");
+	height: 86px;
+	width: 129px;
+	text-indent: -10000px;
+	position: absolute;
+}
+
+/*#banner{
+	height: 700px;
+	width: 100%;
+	background:url("images/main-image.jpg") no-repeat;
+
+}*/
+/*HOW-IT-WORKS*/
+section{
+	margin: 20px 0 30px;
+}
+
+/*section:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+*/
+#how-it-works h2{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal;
+	font-family: Myriad Pro;
+}
+
+#how-it-works p:nth-child(2){
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 17px;
+	font-weight: normal;
+	margin-top: 20px;
+}
+
+#how-it-works h4{
+	padding-top: 5px;
+	text-transform: uppercase;
+	margin-top: 50px;
+}
+
+#how-it-works p:nth-child(3){
+	text-align: center;
+	line-height: 1.5em;
+	margin-top: 15px;
+}
+
+#how-it-works ul li{
+	list-style-type: none;
+	width: 19%;
+	float: left;
+	padding: 0 23px;
+}
+
+#how-it-works ul{
+/*	padding: 0px 23px;*/
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 50px; /*<--*/
+}
+
+.icons{
+	margin: 0 15px;
+}
+
+#how-it-works p:nth-child(7){
+	font-size: 14px;
+	padding: 15px;
+	border: 1px solid grey;
+	width: 160px;
+	text-align: center;
+	clear: both;
+	text-transform: uppercase;
+	margin: 90px auto;
+}
+
+#how-it-works p:nth-child(7) a{
+	text-decoration: none;
+	color: grey;
+}
+
+/*Second banner*/
+#banner2 img{
+	height: 350px;
+	width: 100%;
+}
+
+/*About-the-company*/
+#about-the-company h1, #about-the-company h3{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+}
+
+#about-the-company h1{
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
+#about-the-company h3{
+	padding-bottom: 20px;
+}
+
+#about-the-company ul li{
+	list-style-type: none;
+}
+
+#working-place{
+	list-style-type: none;
+	width: 70%;
+	float: left;
+}
+
+#working-place h4, #what-types li h4{
+	text-transform: uppercase;
+}
+
+#working-place blockquote{
+	text-transform: uppercase;
+	padding: 14px 0;
+	line-height: 1.5em;
+}
+
+#working-place p, #what-types li p{
+	line-height: 1.5em;
+}
+
+#emptyBox{
+	background: #d3d3d3;
+	height: 250px;
+	width: 350px;
+	width: 25%;
+	float: right;
+}
+
+#about-the-company ul li:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#what-types li{
+	margin-top: 40px;
+	float: left;
+	width: 31%;
+}
+
+#what-types li h4{
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+#what-types li:nth-child(1), #what-types li:nth-child(2){
+	margin-right: 40px;
+}
+
+#about-the-company:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*banner 3*/
+#banner3 img{
+	margin-top: 50px;
+	height: 400px;
+	width: 100%;
+}
+/*#abc ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}*/
+
+/*Get in touch*/
+#get-in-touch h1{
+	font-weight: normal;
+	margin-top: 30px;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#get-in-touch h3{
+	font-weight: normal;
+	color: grey;
+	margin-top: 20px;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#get-in-touch p{
+	margin-top: 40px;
+	width: 60%;
+	color: grey;
+	text-align: center;
+	padding-left: 20%;
+}
+
+#address li{
+	list-style-type: none;
+	padding-left: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	float: left;
+	width: 20%;
+	margin-left: 10%;
+}
+
+#location{
+	background: url("images/frost_25.jpg") no-repeat top left;
+}
+#phone{
+	background: url("images/mini-icon6.jpg") no-repeat top left;
+}
+
+#email{
+	background: url("images/mini-icon7.jpg") no-repeat top left;
+}
+
+#get-in-touch:after, #get-in-touch ul li:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#contact{
+	margin-top: 60px;
+	clear: both;
+}
+
+#contact{
+	padding-left: 10%;
+}
+
+#contact li{
+	margin-right: 30px;
+	list-style-type: none;
+	float: left;
+	width: 40%;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid grey;
+}
+
+#contact li:nth-child(3){
+	padding-bottom: 70px;
+}
+
+#get-in-touch p:nth-of-type(2){
+	font-family: Josefin Sans;
+	font-size: 20px;
+	margin: 0 auto;
+	clear: both;
+	padding: 10px;
+	background: #00BFFF;
+	width: 140px;
+}
+
+#get-in-touch p:nth-of-type(2) a{
+	
+	text-decoration: none;
+	color: white;
+}
+
+footer{
+	padding: 50px;
+	background: black;
+	color: white;
+	text-align: center;
+}
